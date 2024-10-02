@@ -2,4 +2,4 @@ This is the README for my site. There are a lot of important things you should k
 
 - This site is about my car and other cars
 
-That's all of the important things, thank you for reading!
+Those were all of the important things, thank you for reading!
