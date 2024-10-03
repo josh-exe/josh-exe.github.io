@@ -1,0 +1,13 @@
+p {
+    color: black;
+    border: 1px black;
+    padding: 10px;
+}
+b {
+    border: 2px;
+    padding: 5px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 16px;
+    margin: 0px;
+}
+
