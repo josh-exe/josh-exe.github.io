@@ -2,18 +2,12 @@
 <html>
 <head>
     <style>
-    
     div {
-    background-color: rgb(123, 123, 123);
+    background-color: rgb(255, 255, 255);
     font-family: 'Times New Roman', Times, serif;
     font-size: 16px;
-    }
-    h1, h2, h3, h4 {
     color: black;
-    border: 2px solid black;
-    padding: 20px;
-    margin: 10px;
-   }
+    }
    .dark-mode {
    background-color: #333;
    color: #fff;
@@ -21,15 +15,14 @@
    </style>
    <script>
    function toggleDarkMode() {
-
-    document.body.classList.toggle('dark-mode');
+   document.body.classList.toggle('dark-mode');
    }
    </script>
     <div><a href="https://josh-exe.github.io"><h3><span style="color: rgb(216, 20, 20);">Return</span></h3></a>
     <title>Other Cool Cars</title>
 </head>
-<body>
-    <h1>This is Where I Yap About Other Cars!</h1>
+<body class="dark-mode">
+    <h1>This is Where I Yap About Other Cars!</h1>                                                 <button onclick="toggleDarkMode()">Toggle Dark Mode</button>
     <h4>*These cars are not ranked, the number doesn't really mean anything.*</h4>
     <ol>
     <li><h3>Ford GT40 MKII</h3></li>
