@@ -1,20 +1,4 @@
-p {
-    color: black;
-    border: 1px black;
-    padding: 10px;
-    background-color: rgb(224, 237, 237);
-    }
-  
-    ul {
-    color: black;
-    border: 1px black;
-    padding: 10px;
-    background-color: rgb(224, 237, 237);
-    }
-  
-    ol {
-    color: black;
-    border: 1px black;
-    padding: 10px;
-    background-color: rgb(224, 237, 237);
+.dark-mode {
+    background-color: #333;
+    color: #fff;
     }

@@ -3,7 +3,7 @@
 <head>
    <style>
    div {
-   background-color: rgb(123, 123, 123);
+   background-color: rgb(255, 255, 255);
    font-family: 'Times New Roman', Times, serif;
    font-size: 20px;
    }
@@ -13,12 +13,24 @@
    padding: 15px;
    margin: 10px;;
    }
+   .dark-mode {
+   background-color: #333;
+   color: #fff;
+   }
    </style>
+   <script>
+   function toggleDarkMode() {
+
+    document.body.classList.toggle('dark-mode');
+   }
+   </script>
+   
    <div><title>Josh's Mustang Madness</title>
 </head>
-<body>
+<body class="dark-mode">
+   
    <h1>This is Where I Yap About My Mustang!</h1>
-    <h2>The History</h2>
+    <h2>The History</h2>                                                                                                     <button onclick="toggleDarkMode()">Toggle Dark Mode</button>
     <p>  To start, there is a lot of cool history behind the Mustang. In 1965, my grandma got the Mustang as her first car when she turned 16. She drove the car pretty much every day.<br>
        Through the years, she went to many car shows, cruises. She wasn't alone, as my grandpa and my dad had their own Mustangs. I do not know what Mustang my grandpa had,<br>
        but my dad had a very nice dark blue 1965 Fastback (See the image below).</p>
