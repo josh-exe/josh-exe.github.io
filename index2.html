@@ -21,6 +21,33 @@
    function toggleDarkMode() {
    document.body.classList.toggle('dark-mode');
    }
+
+   function typeEffect(element, text, speed = 50) {
+    // create a counter to iterate over the characters in `text`
+    let i = 0;
+    
+    // create a function that executes every `speed` microseconds
+    const timer = setInterval(() => {
+        // while the counter is less than the length of the `text` string
+        if (i < text.length) {
+            // update the contents of the HTML `element` by adding the next character in the `text` string to it
+            element.innerHTML += text.charAt(i);
+            i++;
+        } else {
+            // when finished, stop the loop
+            clearInterval(timer);
+        }
+    }, speed);
+    }
+
+// use it like this:
+    window.onload = function() {
+    // get the target HTML element
+    const element = document.getElementById('typing-text');
+    // execute the typeEffect function with the element and a message
+    typeEffect(element, "Welcome to my awesome website!");
+    };
+
    </script>
     <div><a href="https://josh-exe.github.io"><h3><span style="color: rgb(216, 20, 20);">Return</span></h3></a>
     <button onclick="toggleDarkMode()">Toggle Dark Mode</button>
