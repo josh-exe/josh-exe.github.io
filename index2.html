@@ -23,7 +23,7 @@
    }
    </script>
    <script>
-   function typeEffect(element, text, speed = 50) {
+   function typeEffect(body, text, speed = 50) {
     // create a counter to iterate over the characters in `text`
     let i = 0;
     
@@ -32,7 +32,7 @@
         // while the counter is less than the length of the `text` string
         if (i < text.length) {
             // update the contents of the HTML `element` by adding the next character in the `text` string to it
-            element.innerHTML += text.charAt(i);
+            body.innerHTML += text.charAt(i);
             i++;
         } else {
             // when finished, stop the loop
@@ -44,7 +44,7 @@
 // use it like this:
     window.onload = function() {
     // get the target HTML element
-    const element = document.getElementById('typing-text');
+    const body = document.getElementById('typing-text');
     // execute the typeEffect function with the element and a message
     typeEffect(body, "");
     };
